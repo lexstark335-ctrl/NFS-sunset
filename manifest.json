@@ -1,0 +1,262 @@
+{
+  "project": "NFS sunset",
+  "version": "1.0.0",
+  "generatedAt": "2026-11-05T16:02:59.000Z",
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 85,
+      "sha256": "a6081991a2388570bfc7f34f1983b241761c399eeee91e03a1c1708a994d7740"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 72,
+      "sha256": "7bc91f7ce7bc15268199e511d1f9b814246958e28114bddbb5cec622997fedd1"
+    },
+    {
+      "file": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "PLAY.html",
+      "bytes": 8681896,
+      "sha256": "93a7b2f6db96360655300652901d7bbd50d6002f6d1e3542f5584902c1a66975"
+    },
+    {
+      "file": "README.md",
+      "bytes": 7596,
+      "sha256": "14b19b28605dca61eb41dac3bd3fda4dfe85331fe2c8254bbd78b2681162c455"
+    },
+    {
+      "file": "START-GAME.cmd",
+      "bytes": 332,
+      "sha256": "0878df3ae01d2aa41929bc066ac50a06b241b03ce89024a9ea17d58a1b08bc1e"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1861,
+      "sha256": "7bb93ecf271add6ffb9a48f7396913dad16b226bdc68be2d2e8b13a619ab7147"
+    },
+    {
+      "file": "assets/crt/crt-frame.webp",
+      "bytes": 93338,
+      "sha256": "3cbbe7a88bfd84939576030f724172162b0b1c45e4c8605ef8d08c61b8a7d822"
+    },
+    {
+      "file": "assets/crt/crt-glass.webp",
+      "bytes": 31408,
+      "sha256": "ee33e645b2926ce469ab018e1cc57b5c2ff932c8a45bfa81392bb03b1916fe3d"
+    },
+    {
+      "file": "assets/crt/crt-vignette.webp",
+      "bytes": 62006,
+      "sha256": "5820dcd9ebff955dbc8aa3d367043a33510c602808269df9e163d9ca48de6c18"
+    },
+    {
+      "file": "assets/index-BWe1F7s7.css",
+      "bytes": 148988,
+      "sha256": "7a4b4008d1237bd1f2f1439c73980c39aee8f419816180e9cf750d2c81fa9c7b"
+    },
+    {
+      "file": "assets/models/ignition-car.glb",
+      "bytes": 1829316,
+      "sha256": "c04bb20bce55ea878e4b340ed23492a1d6834bd40fdafc5512c06abd7c7079eb"
+    },
+    {
+      "file": "assets/models/police-car.glb",
+      "bytes": 180512,
+      "sha256": "2ad6705f58bae2acf806eddb28acd9fc2ff6dc65a726575be5c180631b3132d0"
+    },
+    {
+      "file": "assets/racer-testable.js",
+      "bytes": 38164,
+      "sha256": "5e5ba2ee38be68fb37e178af5f990d7b50fa065bb768210f7fc950f280020925"
+    },
+    {
+      "file": "assets/sceneApp-7cpBE01P.js",
+      "bytes": 81490,
+      "sha256": "17a5d1b5ed4a889aca9cf8f2d42f27d28de771ff4689ee058a48c97eefe10a3f"
+    },
+    {
+      "file": "assets/three-BJx-OGLx.js",
+      "bytes": 645612,
+      "sha256": "fbb35a4100279457b2f63156587eb07f5105d03efd049fc19e5be28367d7bf69"
+    },
+    {
+      "file": "assets/translation-adapter.js",
+      "bytes": 271,
+      "sha256": "7cc867abc80531e25e87ed51482e5e79675f14be0c88c24558f09d58b9a594d9"
+    },
+    {
+      "file": "audio/boost.mp3",
+      "bytes": 86770,
+      "sha256": "86fee06f9b24bc44fec54b98d90e3f8130613864d55c05dffbde02dea599404a"
+    },
+    {
+      "file": "boot.js",
+      "bytes": 760,
+      "sha256": "37451910ecbeb9c3e95c4f2f7c067f9f3eead192816c36e1558a9bd0a65831a9"
+    },
+    {
+      "file": "build-single.cjs",
+      "bytes": 2651,
+      "sha256": "07c051c6b9843e59a7eb9c4f9aa02ac3f61ca9529701ea859588ca7a7b8354f4"
+    },
+    {
+      "file": "fonts/pixel-zh.ttf",
+      "bytes": 2871980,
+      "sha256": "77a38b636098880bc1b820b5e2c52e58370abd19c06a94f6ece756317ab54d7a"
+    },
+    {
+      "file": "fonts/pixel-zh.woff2",
+      "bytes": 408932,
+      "sha256": "73aee56fe33ba5eb46bebf6c8716eae176c1e28f266f565686b4aa64e5129fee"
+    },
+    {
+      "file": "index.html",
+      "bytes": 4430,
+      "sha256": "34af9841a891889c1b5fc94e4d63bfe805e25a3248b50c07d324b380d69d4bee"
+    },
+    {
+      "file": "licenses/THREE-MIT.txt",
+      "bytes": 1074,
+      "sha256": "9145738ca9db46a5a84acb4a0719920522a2c8a54e11ce9d462b625235269abd"
+    },
+    {
+      "file": "package.json",
+      "bytes": 238,
+      "sha256": "19ded1571541db9da142ce3d64d8aa2bacb5e7c327ad3376b0c18e1af5f96070"
+    },
+    {
+      "file": "recovery.css",
+      "bytes": 4652,
+      "sha256": "46e04c1662f69e6be90067a079a3e24b62d0a86c01c353816a7fa38df3598f5b"
+    },
+    {
+      "file": "scripts/http-smoke.cjs",
+      "bytes": 1866,
+      "sha256": "f75fe8296dc614eabd13d81ea1a78856f68c433599b824e07c78370b2e95310b"
+    },
+    {
+      "file": "scripts/integrate.cjs",
+      "bytes": 6212,
+      "sha256": "9cac0becdf29f5ad688e3d2a3797d6e310b20551cb2114a14efb1148b9b28bbe"
+    },
+    {
+      "file": "scripts/page.cjs",
+      "bytes": 2104,
+      "sha256": "81a9a4cb71aa18e0791e990f024782038fc2d505a559ecb760d7cd243b7b9e3d"
+    },
+    {
+      "file": "scripts/validate.cjs",
+      "bytes": 3590,
+      "sha256": "5436f76c139f4d7d3728ab765b18500ca5cfa7db0210b3cc3d3b5f2f476adb01"
+    },
+    {
+      "file": "serve.cjs",
+      "bytes": 1658,
+      "sha256": "325c6965e267585b05bd64e3c8108742b1d050612496273878f0610f619d81ab"
+    },
+    {
+      "file": "src/garage.js",
+      "bytes": 3541,
+      "sha256": "21ad8152d67d457d448324d440a01fdb8f3976be4fbd0f7397ca135408c26c7d"
+    },
+    {
+      "file": "src/models.js",
+      "bytes": 6643,
+      "sha256": "4704b9ed895ee804e4e1d8b01130e4cc34e6742ef43301816a0207e18ad16636"
+    },
+    {
+      "file": "src/music.js",
+      "bytes": 8268,
+      "sha256": "1ece2e27cc0d7f367c2e4a166462715f470821deef2243219ba1d3817fa4e3d4"
+    },
+    {
+      "file": "src/runtime.js",
+      "bytes": 4241,
+      "sha256": "96fb94cfb6651118836002cc31516562519a70324b31b017118ae9aed6d96ba8"
+    },
+    {
+      "file": "src/three.js",
+      "bytes": 564,
+      "sha256": "bba77617fd57b11e716b6ca28fb82359f4280c3a7006424d39b20b60c5afce6a"
+    },
+    {
+      "file": "src/trail-state.js",
+      "bytes": 2710,
+      "sha256": "e9167b14955ba696f8fd6367e9db15843f38bab4f8bb89218baae84197278c8f"
+    },
+    {
+      "file": "src/trails.js",
+      "bytes": 5365,
+      "sha256": "3c94e73b428675489bb6ff4cfd9b4a75af72855cbf2e037ec71ce07553d30b98"
+    },
+    {
+      "file": "tests/dom-fixture.cjs",
+      "bytes": 3326,
+      "sha256": "48f3825fa248e7e2f33e59983aceaafb6ddd2f2d16e1ad5f37b126bd0155f375"
+    },
+    {
+      "file": "tests/game.test.cjs",
+      "bytes": 5893,
+      "sha256": "b95f59887642587f615b649af74fc00d9022e64a0c18862df1ad6aac4453f790"
+    },
+    {
+      "file": "tests/music.test.cjs",
+      "bytes": 5248,
+      "sha256": "61e7130f67b3a31ee612d43d385d930b2809afc13a18189e9775e8ef5ce975de"
+    },
+    {
+      "file": "tests/package.test.cjs",
+      "bytes": 2679,
+      "sha256": "a48638528a2322fc8108c8e698688190e62b652c43df40ee3c8a062396b6da78"
+    },
+    {
+      "file": "tests/trails.test.cjs",
+      "bytes": 2915,
+      "sha256": "18789a344af6f0fb3f3080707c97a31e8743d0a74b75a241abefd00209060b63"
+    },
+    {
+      "file": "validation.json",
+      "bytes": 1913,
+      "sha256": "81b0710b0b9ecb332da6fa010339b45d764d2a56722b2207c41a51d163d9713f"
+    },
+    {
+      "file": "vendor/base.html",
+      "bytes": 5366,
+      "sha256": "8d6e0aef24a80de4056a2a047e8b351cf432d7c12f626910650a6e97d8d41a4c"
+    },
+    {
+      "file": "vendor/nes-core.min.css",
+      "bytes": 52579,
+      "sha256": "4e296c179198b2edaeecba06ff5a0ef8a73c996939edff3dbea072190b3626b5"
+    },
+    {
+      "file": "vendor/roku-scene.original.js",
+      "bytes": 82958,
+      "sha256": "a65d6fd98294cd8eb70030e4696f2d8d2d5ada2d66eafb7aed70715f402dd245"
+    },
+    {
+      "file": "verification/MANUAL-CHECKS.md",
+      "bytes": 1932,
+      "sha256": "0fce4a148d253b23ca7409250970a63e01c4d5dba9f8377a14e938bfc7fe786e"
+    },
+    {
+      "file": "verification/garage-overlay-fix.md",
+      "bytes": 997,
+      "sha256": "c7aee19b2f17b982f21730da04e5ee4d2fdd32d379cff57f15d38c81f5a9a040"
+    },
+    {
+      "file": "verification/garage-overlay-fixed.jpg",
+      "bytes": 55072,
+      "sha256": "2092757fda2029cdb1709db1cb681311c7eac8be23f7ed246b6049458105ba29"
+    },
+    {
+      "file": "verification/node-tests.tap",
+      "bytes": 4658,
+      "sha256": "c80c34c5f3c70b5a59a5bcb3309d8b8ff28b0735cefbd91fe5adb19de6dc5370"
+    }
+  ]
+}

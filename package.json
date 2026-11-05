@@ -1,0 +1,1 @@
+{"name":"nfs-sunset","private":true,"version":"1.0.0","type":"module","scripts":{"start":"node serve.cjs 4176","build":"node scripts/integrate.cjs && node scripts/page.cjs && node build-single.cjs","test":"node --test tests/*.test.cjs"}}

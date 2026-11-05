@@ -1,0 +1,124 @@
+TAP version 13
+# Subtest: both user GLBs parse into drawable geometry; four player vehicles use distinct cached models
+ok 1 - both user GLBs parse into drawable geometry; four player vehicles use distinct cached models
+  ---
+  duration_ms: 133.5977
+  type: 'test'
+  ...
+# Subtest: original entry transitions into driving; steering, boost and pause work through the same simulation
+ok 2 - original entry transitions into driving; steering, boost and pause work through the same simulation
+  ---
+  duration_ms: 77.4653
+  type: 'test'
+  ...
+# Subtest: all four free trials switch actual model without any persisted score or selection
+ok 3 - all four free trials switch actual model without any persisted score or selection
+  ---
+  duration_ms: 59.2525
+  type: 'test'
+  ...
+# Subtest: a real traffic collision ends the run and banks normal score only once
+ok 4 - a real traffic collision ends the run and banks normal score only once
+  ---
+  duration_ms: 45.2052
+  type: 'test'
+  ...
+# Subtest: unlock threshold and saved selection survive a new game instance
+ok 5 - unlock threshold and saved selection survive a new game instance
+  ---
+  duration_ms: 21.1594
+  type: 'test'
+  ...
+# Subtest: retry clears score, collision and boost state without banking the previous run twice
+ok 6 - retry clears score, collision and boost state without banking the previous run twice
+  ---
+  duration_ms: 68.8386
+  type: 'test'
+  ...
+# Subtest: actual tail mesh vertices are finite and stay on the trail layer while the road stays on world layer
+ok 7 - actual tail mesh vertices are finite and stay on the trail layer while the road stays on world layer
+  ---
+  duration_ms: 67.7051
+  type: 'test'
+  ...
+# Subtest: garage builds four cards and reuses one preview renderer and four objects for 25 visits (GPU mocked)
+ok 8 - garage builds four cards and reuses one preview renderer and four objects for 25 visits (GPU mocked)
+  ---
+  duration_ms: 21.9203
+  type: 'test'
+  ...
+# Subtest: no context before interaction; repeated play/pause keeps one context and one scheduler
+ok 9 - no context before interaction; repeated play/pause keeps one context and one scheduler
+  ---
+  duration_ms: 6.1416
+  type: 'test'
+  ...
+# Subtest: 110 BPM song evolves beyond 32 bars with bounded active voices and background catch-up
+ok 10 - 110 BPM song evolves beyond 32 bars with bounded active voices and background catch-up
+  ---
+  duration_ms: 21.6651
+  type: 'test'
+  ...
+# Subtest: boost changes tone without restarting; pause ducks music and mute does not mute separate engine/SFX
+ok 11 - boost changes tone without restarting; pause ducks music and mute does not mute separate engine/SFX
+  ---
+  duration_ms: 2.2663
+  type: 'test'
+  ...
+# Subtest: source end disconnects every per-note node; engine toggles do not leave duplicate sources
+ok 12 - source end disconnects every per-note node; engine toggles do not leave duplicate sources
+  ---
+  duration_ms: 1.6448
+  type: 'test'
+  ...
+# Subtest: standalone embeds both exact GLBs and all runtime ESM imports resolve internally
+ok 13 - standalone embeds both exact GLBs and all runtime ESM imports resolve internally
+  ---
+  duration_ms: 61.9659
+  type: 'test'
+  ...
+# Subtest: local directory imports and CSS assets exist; old player/backend hooks are removed
+ok 14 - local directory imports and CSS assets exist; old player/backend hooks are removed
+  ---
+  duration_ms: 8.9671
+  type: 'test'
+  ...
+# Subtest: tail trails vanish at idle, grow monotonically and stop growing at maximum speed
+ok 15 - tail trails vanish at idle, grow monotonically and stop growing at maximum speed
+  ---
+  duration_ms: 4.4874
+  type: 'test'
+  ...
+# Subtest: distance sampling preserves turn history for both lamps independent of frame rate
+ok 16 - distance sampling preserves turn history for both lamps independent of frame rate
+  ---
+  duration_ms: 1.1602
+  type: 'test'
+  ...
+# Subtest: long sessions have bounded history and paused samples do not consume storage
+ok 17 - long sessions have bounded history and paused samples do not consume storage
+  ---
+  duration_ms: 2.3208
+  type: 'test'
+  ...
+# Subtest: restart and teleport clear old trails instead of connecting unrelated positions
+ok 18 - restart and teleport clear old trails instead of connecting unrelated positions
+  ---
+  duration_ms: 0.1827
+  type: 'test'
+  ...
+# Subtest: slowing down shortens the trail and lowers opacity without any BOOST switch
+ok 19 - slowing down shortens the trail and lowers opacity without any BOOST switch
+  ---
+  duration_ms: 0.1428
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 643.6332

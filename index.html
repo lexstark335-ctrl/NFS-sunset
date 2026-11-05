@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN" data-style="synth"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>NFS sunset</title>
+<link rel="stylesheet" href="./vendor/nes-core.min.css"><link rel="stylesheet" href="./assets/index-BWe1F7s7.css">
+<link rel="stylesheet" href="./recovery.css"><script type="module" src="./boot.js"></script>
+</head><body>
+<canvas class="webgl" aria-label="NFS sunset 赛车场景"></canvas><div class="crt-overlay"></div>
+<div id="loading-screen" class="loading-screen"><div class="loading-content"><h1 class="loading-title">加载赛车…</h1><progress id="loading-progress" max="100" value="0"></progress><p id="loading-text">0%</p></div></div>
+<header id="recovery-launcher"><div>NFS sunset / NIGHT DRIVE</div><button id="tv-power-btn" class="tv-entry" type="button" aria-expanded="false" aria-controls="tv-portal" disabled>进入赛车</button><button id="menu-garage" disabled>车库 / 04</button><small>← → / A D 转向 · W / ↑ 加速 · ESC 返回</small></header>
+    <!-- 合成波赛车：直接运行在主 3D 场景上，点击 WELCOME 进入 -->
+    <div id="tv-portal" class="racer-hud" aria-hidden="true">
+      <div class="racer-hud-top">
+        <span class="racer-hud-tag" aria-hidden="true">CH 03 // NFS sunset</span>
+        <span id="racer-status" class="racer-hud-status">STANDBY</span>
+        <span class="racer-hud-score">
+          <span class="racer-hud-label">SCORE</span>
+          <span id="racer-score" class="racer-hud-value">000000</span>
+          <span class="racer-hud-label">HI</span>
+          <span id="racer-hiscore" class="racer-hud-value">000000</span>
+        </span>
+        <button id="tv-portal-close" class="racer-hud-close" type="button" aria-label="退出游戏">✕</button>
+      </div>
+
+      <span id="racer-overlay" class="racer-overlay">
+        <span id="racer-overlay-title" class="racer-overlay-title">NFS sunset</span>
+        <span id="racer-overlay-text" class="racer-overlay-text">← → / A D 转向 · 避开前方来车</span>
+        <span class="racer-overlay-actions">
+          <button id="racer-start-btn" class="racer-overlay-start" type="button">PRESS START</button>
+          <button id="racer-garage-btn" class="racer-overlay-start is-ghost" type="button">车库</button>
+        </span>
+      </span>
+
+      <div class="racer-hud-bottom">
+        <span class="racer-hud-total">TOTAL <b id="racer-total">000000</b></span>
+        <span class="racer-hud-hint">← → / A D 转向 · W / ↑ 加速 · 点击屏幕左右半区 · ESC 退出</span>
+        <span class="racer-hud-brand" aria-hidden="true">CRT-2000 · NFS sunset</span>
+      </div>
+    </div>
+
+
+<section id="integrated-garage" class="integrated-modal" role="dialog" aria-modal="true" aria-labelledby="integrated-garage-title" hidden>
+<div class="integrated-panel"><header><div><small>CRT-2000 / TUNE YOUR FREQUENCY</small><h2 id="integrated-garage-title">THE GARAGE / 车库</h2></div><button id="integrated-garage-close" aria-label="关闭车库">✕</button></header>
+<div class="garage-summary"><span>累计积分解锁 · 解锁不扣分</span><span>TOTAL <b id="integrated-total">000000</b></span></div><div id="integrated-vehicles"></div><footer>每辆车均可免费试驾；试驾不累计成绩，不改变正常选车。<br>模型：原创程序化车 / Ignition Labs / Quaternius</footer></div></section>
+<div id="trial-indicator" role="status" hidden>免费试驾 · 成绩不累计</div><button id="integrated-pause" aria-label="暂停或继续" title="P 暂停 / 继续" hidden>Ⅱ</button>
+<aside id="integrated-music" aria-label="音乐与音效"><p id="music-status">FM / NIGHT CIRCUIT · 110 BPM</p><div><button id="music-toggle" aria-pressed="false">音乐 ▷</button><button id="music-mute" aria-pressed="false">静音</button><input id="music-volume" type="range" min="0" max="1" step="0.01" value="0.42" aria-label="音乐音量"></div><div><button id="engine-toggle" aria-pressed="false">引擎 OFF</button><button id="effects-toggle" aria-pressed="false">音效 OFF</button></div></aside>
+</body></html>

@@ -1,0 +1,2 @@
+# Preserve shipped bytes so model/resource hashes also match after checkout.
+* -text

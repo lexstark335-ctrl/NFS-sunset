@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN" data-style="synth"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>ROKU Racer · 独立恢复版</title>
+<link rel="stylesheet" href="./vendor/nes-core.min.css"><link rel="stylesheet" href="./assets/index-BWe1F7s7.css">
+<link rel="stylesheet" href="./recovery.css"><script type="module" src="./boot.js"></script>
+</head><body>
+<canvas class="webgl" aria-label="ROKU 赛车场景"></canvas><div class="crt-overlay"></div>
+<div id="loading-screen" class="loading-screen"><div class="loading-content"><h1 class="loading-title">加载赛车…</h1><progress id="loading-progress" max="100" value="0"></progress><p id="loading-text">0%</p></div></div>
+<header id="recovery-launcher"><div>ROKU / SYNTHWAVE RACER</div><button id="tv-power-btn" class="tv-entry" type="button" aria-expanded="false" aria-controls="tv-portal" disabled>进入赛车</button><small>← → / A D 转向 · W / ↑ 加速 · ESC 返回</small></header>
+    <!-- 合成波赛车：直接运行在主 3D 场景上，点击 WELCOME 进入 -->
+    <div id="tv-portal" class="racer-hud" aria-hidden="true">
+      <div class="racer-hud-top">
+        <span class="racer-hud-tag" aria-hidden="true">CH 03 // SYNTHWAVE RACER</span>
+        <span id="racer-status" class="racer-hud-status">STANDBY</span>
+        <span class="racer-hud-score">
+          <span class="racer-hud-label">SCORE</span>
+          <span id="racer-score" class="racer-hud-value">000000</span>
+          <span class="racer-hud-label">HI</span>
+          <span id="racer-hiscore" class="racer-hud-value">000000</span>
+        </span>
+        <button id="tv-portal-close" class="racer-hud-close" type="button" aria-label="退出游戏">✕</button>
+      </div>
+
+      <span id="racer-overlay" class="racer-overlay">
+        <span id="racer-overlay-title" class="racer-overlay-title">SYNTHWAVE RACER</span>
+        <span id="racer-overlay-text" class="racer-overlay-text">← → / A D 转向 · 避开前方来车</span>
+        <span class="racer-overlay-actions">
+          <button id="racer-start-btn" class="racer-overlay-start" type="button">PRESS START</button>
+          <button id="racer-garage-btn" class="racer-overlay-start is-ghost" type="button">车库</button>
+        </span>
+      </span>
+
+      <div class="racer-hud-bottom">
+        <span class="racer-hud-total">TOTAL <b id="racer-total">000000</b></span>
+        <span class="racer-hud-hint">← → / A D 转向 · W / ↑ 加速 · 点击屏幕左右半区 · ESC 退出</span>
+        <span class="racer-hud-brand" aria-hidden="true">CRT-2000 · SYNTHWAVE RACER</span>
+      </div>
+    </div>
+
+    <!-- 车库 / 解锁新车：一局结束后自动弹出，外面套上 CRT 电视框素材 -->
+    <div id="racer-garage" class="racer-garage" aria-hidden="true">
+      <div class="racer-garage-crt">
+        <div class="racer-garage-frame">
+          <div class="racer-garage-head">
+            <span class="racer-garage-title">GARAGE // 车辆解锁</span>
+            <span class="racer-garage-total">TOTAL <b id="racer-garage-total">000000</b></span>
+            <button id="racer-garage-close" class="racer-hud-close" type="button" aria-label="关闭车库">✕</button>
+          </div>
+          <div class="racer-garage-stage">
+            <canvas id="racer-garage-canvas" class="racer-garage-canvas"></canvas>
+            <div class="racer-garage-grid">
+              <div class="garage-cell">
+                <div class="garage-cell-info">
+                  <span class="garage-cell-name">STARTER</span>
+                  <span class="garage-cell-stats" data-stats="0"></span>
+                  <button class="garage-action" type="button" data-car="0">使用中</button>
+                </div>
+              </div>
+              <div class="garage-cell">
+                <div class="garage-cell-info">
+                  <span class="garage-cell-name">AERO-X</span>
+                  <span class="garage-cell-stats" data-stats="1"></span>
+                  <button class="garage-action" type="button" data-car="1">🔒</button>
+                </div>
+              </div>
+              <div class="garage-cell">
+                <div class="garage-cell-info">
+                  <span class="garage-cell-name">PHANTOM</span>
+                  <span class="garage-cell-stats" data-stats="2"></span>
+                  <button class="garage-action" type="button" data-car="2">🔒</button>
+                </div>
+              </div>
+              <div class="garage-cell">
+                <div class="garage-cell-info">
+                  <span class="garage-cell-name">NOVA</span>
+                  <span class="garage-cell-stats" data-stats="3"></span>
+                  <button class="garage-action" type="button" data-car="3">🔒</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="crt-bezel racer-garage-bezel" src="./assets/crt/crt-frame.webp" alt="" aria-hidden="true">
+      </div>
+    </div>
+
+
+</body></html>

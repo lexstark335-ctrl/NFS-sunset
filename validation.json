@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-05T14:53:17.709Z",
+  "engine": "Three.js r184, original bundled dependency",
+  "syntaxFiles": 23,
+  "tests": {
+    "total": 19,
+    "passed": 19,
+    "failed": 0,
+    "log": "verification/node-tests.tap",
+    "environment": "Node.js; real original simulation and GLB geometry, DOM/GPU/audio interfaces mocked"
+  },
+  "sources": {
+    "recoveredFiles": 19,
+    "recoveredManifestUnchanged": true,
+    "baselineIsExactCopy": true,
+    "modelCopiesUnchanged": true
+  },
+  "http": {
+    "status": "verified",
+    "response": 200,
+    "resources": 24,
+    "method": "同一执行环境启动实际 serve.cjs，GET 入口、HEAD 全部运行资源",
+    "scope": "HTTP 资源服务；不是浏览器渲染验收",
+    "lastAttempt": {
+      "status": "restricted",
+      "code": "EACCES",
+      "note": "本轮命令行 HTTP 探测受限；实际浏览器已可访问"
+    }
+  },
+  "browser": {
+    "status": "partially-verified",
+    "observedOn": "2026-11-05",
+    "url": "http://127.0.0.1:4176/",
+    "testedVisually": true,
+    "scope": "GAME OVER 后打开车库不再覆盖；关闭后结束界面恢复",
+    "screenshots": [
+      "verification/garage-overlay-fixed.jpg"
+    ],
+    "record": "verification/garage-overlay-fix.md"
+  },
+  "notVerified": [
+    "浏览器中完整场景启动与真实输入",
+    "四车贴图、预览及道路/车身的实际渲染",
+    "CRT/Bloom/红色尾迹视觉",
+    "实际音乐听感、响度和设备播放",
+    "浏览器控制台错误与 GPU 内存走势",
+    "实际页面刷新后的 localStorage 保留",
+    "移动端触控、不同显卡和浏览器",
+    "单文件浏览器运行与断网试玩"
+  ],
+  "singleFile": {
+    "file": "PLAY.html",
+    "bytes": 8681896,
+    "sha256": "93a7b2f6db96360655300652901d7bbd50d6002f6d1e3542f5584902c1a66975",
+    "status": "资源内嵌和依赖闭合测试通过；尚未浏览器运行"
+  }
+}

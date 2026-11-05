@@ -1,0 +1,27 @@
+/* 保留原 ROKU 的主场景/HUD；以下仅为入口、迁入的车库与音乐控件。 */
+#recovery-launcher{position:fixed;inset:5vh 1rem auto;z-index:20;display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center;color:#8fffee;font-family:var(--font-main),monospace;text-shadow:0 0 12px #0dd}
+#recovery-launcher .tv-entry{font-size:clamp(20px,4vw,40px);padding:.5em 1.2em;border:1px solid #68fff0;background:#090419c9;border-radius:8px}
+#recovery-launcher small{font-size:12px;color:#bfd4dc}body.racer-active #recovery-launcher{display:none}
+button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible{outline:2px solid #ff64da;outline-offset:3px}
+#loading-text{max-width:80vw;overflow-wrap:anywhere}
+#menu-garage{padding:10px 30px;background:#140a24e8;color:#f5a1ff;border:1px solid #ac56cb;border-radius:6px;font:inherit}
+.integrated-modal[hidden],#trial-indicator[hidden],#integrated-pause[hidden]{display:none!important}
+.integrated-modal{position:fixed;inset:0;z-index:2800;display:grid;place-items:center;background:#02010bd9;backdrop-filter:blur(8px);padding:20px}
+/* 原 HUD 的层级为 2600；车库必须在其上方，且开库时立即隐藏结算遮罩。 */
+body.racer-garage-open #racer-overlay{opacity:0;visibility:hidden;pointer-events:none;transition:none}
+.integrated-panel{width:min(960px,100%);max-height:90vh;overflow:auto;border:2px solid #51e5d6;border-radius:24px;background:linear-gradient(145deg,#130924,#050611);box-shadow:0 0 0 8px #10101c,0 0 0 10px #434051,0 0 50px #0fe3;color:#d4fff9;padding:24px;font-family:var(--font-main),monospace}
+.integrated-panel header{display:flex;align-items:center;justify-content:space-between;gap:16px}.integrated-panel h2{font-size:20px;letter-spacing:2px;margin:0;text-shadow:0 0 14px #0ff8}.integrated-panel header small{font:10px monospace;color:#d87dde}
+.integrated-panel button{background:#0e1c24;border:1px solid #58f6df;color:#bbffed;border-radius:5px;min-height:38px;padding:8px 12px;font-family:inherit;font-size:12px;cursor:pointer}
+.integrated-panel .garage-summary{font:12px monospace;margin:20px 0;color:#97a6b9;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.garage-summary b{color:#ffd077}
+#integrated-vehicles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.integrated-car{min-width:0;border:1px solid #3d3158;border-radius:10px;padding:12px;background:linear-gradient(#141027,#080c16)}.integrated-car.selected{border-color:#66fce5;box-shadow:0 0 18px #00eaca22}
+.integrated-car canvas{width:100%;height:auto;aspect-ratio:420/230;display:block;background:radial-gradient(ellipse at 50% 75%,#124b4a55,transparent 60%)}
+.integrated-car h3{font-size:15px;color:#f6d5ff;margin:5px 0 8px}.integrated-car small{color:#78959a;font:9px monospace;letter-spacing:1px}.integrated-car p{color:#adbacb;font:11px monospace;line-height:1.8;margin:10px 0}
+.integrated-car>div{display:flex;gap:8px}.integrated-car button{flex:1;font-size:11px}.integrated-car button.trial{border-color:#ba78c5;color:#f2bcff;background:#281531}
+.integrated-panel footer{margin-top:18px;color:#859ba5;font-size:11px;line-height:1.8}
+#integrated-music{position:fixed;z-index:100;right:22px;top:90px;width:220px;padding:12px;border:1px solid #61d9d64d;border-radius:7px;background:#070b16ca;box-shadow:0 0 15px #00f5d311;color:#b5e8df;font:10px monospace;backdrop-filter:blur(7px)}
+#integrated-music p{margin:0 0 10px;letter-spacing:1px;color:#70ebdf}#integrated-music div{display:flex;align-items:center;gap:6px;margin-top:6px}
+#integrated-music button{background:#10242e;border:1px solid #2a5f68;color:#c5f0ec;border-radius:3px;padding:6px;font:10px monospace;white-space:nowrap}#integrated-music input{min-width:0;width:100%;accent-color:#66dfcc}
+#trial-indicator{position:fixed;z-index:90;left:50%;top:85px;transform:translateX(-50%);font:12px monospace;color:#ffbded;background:#1b0d29c9;border:1px solid #ce63bb;padding:7px 12px;border-radius:4px}
+#integrated-pause{position:fixed;z-index:110;right:22px;top:45px;color:#9bffed;background:#0b1a23bb;border:1px solid #528f8e;border-radius:4px;width:32px;height:30px}
+@media(max-width:600px){.integrated-modal{padding:12px}.integrated-panel{padding:15px;border-radius:14px;max-height:92vh}.integrated-panel h2{font-size:16px}#integrated-vehicles{gap:9px}.integrated-car{padding:7px}.integrated-car h3{font-size:11px}.integrated-car>div{flex-direction:column}.integrated-car p{font-size:9px}#integrated-music{top:105px;right:12px;width:175px;padding:8px}#trial-indicator{top:75px;left:15px;transform:none;font-size:10px}.integrated-panel footer{font-size:10px}}
